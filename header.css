@@ -1,31 +1,29 @@
-# main header{
+/* Header container */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #3a3a3a;
+  padding: 15px 0;
+}
 
-header {
-    display: block;       
-    width: 100%;
-    padding: 20px;        
-    margin: 0 auto;
-  }
-  
-  
-  nav {
-    background-color: grey;  
-    width: 100%;             
-    padding: 10px 20px;
-    margin-top: 10px;       
-  }
-  
+/* Header links */
+.header-link {
+  margin: 0 20px;
+}
 
-  nav ul {
-    list-style: none;    
-    margin: 0;
-    padding: 0;
-  }
-  
- 
-  nav ul li {
-    display: block;      
-    margin-bottom: 10px; 
-  }
-  
+.header-link a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #b3b3b3;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.header-link a:hover {
+  color: #22b8cf;
+  font-weight: bold;
 }

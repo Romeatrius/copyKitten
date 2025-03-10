@@ -1,1 +1,49 @@
-# table
+/* General table styling */
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+}
+/* Row styling */
+.row {
+    display: flex;
+}
+
+/* Cell styling */
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Adjust spacing between rows */
+#row-1 {
+    margin-bottom: 3px;
+}
+
+#row-2 {
+    margin-bottom: 3px;
+}
+
+/* Styling the middle cell to match the bolded number */
+#cell-5 {
+    font-weight: bold;
+    border: 3px solid black;
+}
+
+/* Table dividers to replicate the image */
+.row:not(:last-child) {
+    border-bottom: 2px solid black;
+}
+
+.cell:not(:last-child) {
+    border-right: 2px solid black;
+}
